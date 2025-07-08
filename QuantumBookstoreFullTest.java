@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Base Book class
+
 abstract class Book {
     protected String isbn;
     protected String title;
@@ -102,21 +102,21 @@ class BookNotAvailableException extends Exception {
     }
 }
 
-// Shipping service simulation
+
 class ShippingService {
     public static void send(String address) {
         System.out.println("Quantum book store: Shipping to " + address);
     }
 }
 
-// Mail service simulation
+
 class MailService {
     public static void send(String email) {
         System.out.println("Quantum book store: Email sent to " + email);
     }
 }
 
-// Bookstore class using ArrayList
+
 class BookStore {
     private List<Book> inventory = new ArrayList<>();
 
@@ -141,7 +141,7 @@ class BookStore {
     }
 }
 
-// Test class
+
 public class QuantumBookstoreFullTest {
     public static void main(String[] args) {
         BookStore store = new BookStore();
